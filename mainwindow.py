@@ -47,6 +47,7 @@ class Ui_MainWindow(object):
         self.event_desc = QTextBrowser(self.centralwidget)
         self.event_desc.setObjectName(u"event_desc")
         self.event_desc.setGeometry(QRect(10, 600, 481, 71))
+        self.event_desc.setTextInteractionFlags(Qt.TextInteractionFlag.LinksAccessibleByKeyboard|Qt.TextInteractionFlag.LinksAccessibleByMouse|Qt.TextInteractionFlag.TextBrowserInteraction|Qt.TextInteractionFlag.TextEditable|Qt.TextInteractionFlag.TextSelectableByMouse)
         self.event_list = QTableView(self.centralwidget)
         self.event_list.setObjectName(u"event_list")
         self.event_list.setGeometry(QRect(10, 10, 481, 381))
